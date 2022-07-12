@@ -9,7 +9,7 @@ dark_background_overlay:
 rounded_borders:
   default: false
   description:
-    en: Enable rounded borders?
+    en: Enable rounded interface borders?
 button_text_case:
   default: uppercase
   type: enum
@@ -23,4 +23,4 @@ highlight_duration:
   min: 0.25
   max: 5
   description:
-    en: How long - in seconds - should the highlight last?
+    en: How long – in seconds – should the highlight last?
