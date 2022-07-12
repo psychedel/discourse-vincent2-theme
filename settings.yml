@@ -6,7 +6,7 @@ dark_background_overlay:
   default: false
   description:
     en: Enable this if you've set a custom background above.
-rounded_borders:
+rounded_interface_borders:
   default: false
   description:
     en: Enable rounded interface borders?
