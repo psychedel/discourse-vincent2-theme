@@ -98,7 +98,7 @@ $button-text-case: #{$button_text_case} !default;
 
 html {
   font-family: "Assistant", sans-serif;
-  background: #222;
+  background: #0A051E;
   font-size: 15px;
 }
 
@@ -833,7 +833,7 @@ section.embedded-posts.top {
 }
 
 #main-outlet {
-  padding-top: 80px;
+  padding-top: 1.5em;
 }
 
 #post_1 .post-actions .post-action {
@@ -899,7 +899,7 @@ section.post-menu-area {
 .alert,
 #share-link.visible,
 .wrap {
-  max-width: $V-page-max-width;
+  max-width: 1110px;
 }
 
 // custom ---------------------------------------------
@@ -2228,7 +2228,7 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
   -webkit-text-stroke: 0;
 }
 
-@if $rounded_borders == "true" {
+@if $rounded_interface_borders == "true" {
   #post_1 .contents,
   .nav-pills > li.active > a,
   .topic-map .buttons .btn,
