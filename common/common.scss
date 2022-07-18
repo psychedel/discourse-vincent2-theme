@@ -1414,43 +1414,12 @@ span.badge-category-parent-bg {
 
 // plugin support -----------------------------------------------------------------------------
 
-// Retort  ---------------------------------------------
-
-button.post-retort {
-  z-index: 1;
-  float: none;
-}
-
-button.post-retort:first-of-type {
-  margin-left: 1.25em;
-}
-
-// Whos online  ---------------------------------------
-
-#whos-online {
-  padding: 1em 0.75em;
-  background: $main-background;
-  margin-bottom: 1em;
-}
-
 // Discourse Spoiler Alert  ---------------------------
 
 .spoiled p {
   text-shadow: inherit;
   -webkit-text-stroke: inherit;
   color: inherit;
-}
-
-// Discourse signature plugin  ------------------------
-
-.user-signature {
-  padding: 0 1.25em;
-}
-
-// Discourse assign plugin  ------------------------
-
-p.assigned-to {
-  padding: 0 1.25em;
 }
 
 // Inputs -----------------------------------------------------------------------------
@@ -2329,10 +2298,5 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
   .post-actions {
     padding-top: 10px;
     margin-top: -10px;
-  }
-
-  // plugin support
-  #whos-online {
-    border-radius: 10px;
   }
 }
