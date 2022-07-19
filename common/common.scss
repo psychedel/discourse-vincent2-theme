@@ -1380,13 +1380,8 @@ table.category-list > thead,
   left: -1.25em $i;
 }
 
-span.badge-category-parent-bg {
-  border-radius: 100vw 0 0 100vw;
-
-  + .badge-category-bg {
-    border-radius: 0 100vw 100vw 0;
-    border-left: 1px solid $header_background;
-  }
+span.badge-category-parent-bg + .badge-category-bg {
+  border-left: 1px solid $header_background;
 }
 
 .groups-table,
