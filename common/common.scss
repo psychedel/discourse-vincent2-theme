@@ -1243,6 +1243,11 @@ a {
   right: 3px;
 }
 
+/* Width of "bar" category style -- default is unsymmetrical and ugly. */
+.badge-wrapper.bar span.badge-category-bg { width: 3px; }
+.badge-wrapper.bar span.badge-category-parent-bg,
+.badge-wrapper.bar span.badge-category-parent-bg + span.badge-category-bg { width: 3px; }
+
 header.d-header.clearfix {
   border-bottom: 1px solid #555555;
 }
