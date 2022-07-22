@@ -10,6 +10,10 @@ rounded_interface_borders:
   default: false
   description:
     en: Enable rounded interface borders?
+rounded_category_styles:
+  default: false
+  description:
+    en: "Enable rounded category styles? (Note: only affects \"bullet\" category style)"
 button_text_case:
   default: uppercase
   type: enum

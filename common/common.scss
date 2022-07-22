@@ -2282,3 +2282,10 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
     margin-top: -10px;
   }
 }
+
+@if $rounded_category_styles == "true" {
+  /* Border radius for "bullet" category style */
+  .badge-wrapper.bullet span.badge-category-bg { border-radius: 50%; }
+  .badge-wrapper.bullet span.badge-category-parent-bg { border-radius: 50% 0 0 50%; }
+  .badge-wrapper.bullet span.badge-category-parent-bg + span.badge-category-bg { border-radius: 0 50% 50% 0; }
+}
