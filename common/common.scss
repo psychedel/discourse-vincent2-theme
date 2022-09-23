@@ -2283,6 +2283,14 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
   }
 }
 
+@if $box_style_text-shadow == "true" {
+  /* Adds text-shadow to category names in their category badge style */
+  .badge-wrapper.box span.badge-category .category-name {
+    text-shadow: 0 0 3px black;
+    padding: 0px 0.5px;
+  }
+}
+
 @if $rounded_category_styles == "true" {
   /* "bar" category style */
   .badge-wrapper.bar span.badge-category-bg { border-radius: 5px; }
@@ -2296,5 +2304,4 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
   .badge-wrapper.bullet span.badge-category-bg { border-radius: 50%; }
   .badge-wrapper.bullet span.badge-category-parent-bg { border-radius: 50% 0 0 50%; }
   .badge-wrapper.bullet span.badge-category-parent-bg + span.badge-category-bg { border-radius: 0 50% 50% 0; }
-  
 }

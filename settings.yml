@@ -5,7 +5,7 @@ theme_background:
 dark_background_overlay:
   default: false
   description:
-    en: Enable this if you've set a custom background above.
+    en: "Enable this if you've set a custom background above."
 rounded_interface_borders:
   default: false
   description:
@@ -13,7 +13,11 @@ rounded_interface_borders:
 rounded_category_styles:
   default: false
   description:
-    en: "Enable rounded category styles? (Note: only affects \"bullet\" category style)"
+    en: Enable rounded category styles?
+box_style_text-shadow:
+  default: false
+  description:
+    en: Enable a text-shadow effect on category names, when using the box category style?
 button_text_case:
   default: uppercase
   type: enum
