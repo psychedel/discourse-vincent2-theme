@@ -1721,10 +1721,6 @@ section.post-actions:empty {
   background: rgba(255, 255, 255, 0.1);
 }
 
-ul.nav.nav-pills {
-  margin: 0.5em 0;
-}
-
 .admin-customize .themes-list-header {
     background-color: var(--primary-low);
 }
@@ -2288,8 +2284,17 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
 }
 
 @if $rounded_category_styles == "true" {
-  /* Border radius for "bullet" category style */
+  /* "bar" category style */
+  .badge-wrapper.bar span.badge-category-bg { border-radius: 5px; }
+  .badge-wrapper.bar span.badge-category-parent-bg { border-radius: 5px 0 0 5px; }
+  .badge-wrapper.bar span.badge-category-parent-bg + span.badge-category-bg { border-radius: 0 5px 5px 0; }
+  /* "box" category style */
+  .badge-wrapper.box span.badge-category-bg { border-radius: 5px; }
+  .badge-wrapper.box span.badge-category-parent-bg { border-radius: 5px 0 0 5px; }
+  .badge-wrapper.box span.badge-category-parent-bg + span.badge-category-bg { border-radius: 0 5px 5px 0; }
+  /* "bullet" category style */
   .badge-wrapper.bullet span.badge-category-bg { border-radius: 50%; }
   .badge-wrapper.bullet span.badge-category-parent-bg { border-radius: 50% 0 0 50%; }
   .badge-wrapper.bullet span.badge-category-parent-bg + span.badge-category-bg { border-radius: 0 50% 50% 0; }
+  
 }
