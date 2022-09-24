@@ -346,6 +346,10 @@ button.ok:hover {
   background: $success;
 }
 
+.more-topics .btn:hover {
+    background-color: #115d7a;
+}
+
 // background none ------------------------------
 
 .nav-pills > li:not(.active) > a:hover,
@@ -2196,6 +2200,7 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
     border-radius: 10px 10px 0 0;
   }
 
+  .more-topics .btn:hover,
   .popup-menu,
   .list-controls,
   .select-kit.dropdown-select-box.is-expanded .select-kit-body,
