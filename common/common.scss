@@ -2200,7 +2200,6 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
     border-radius: 10px 10px 0 0;
   }
 
-  .more-topics .btn:hover,
   .popup-menu,
   .list-controls,
   .select-kit.dropdown-select-box.is-expanded .select-kit-body,
@@ -2235,6 +2234,7 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
     }
   }
 
+  .more-topics .btn:hover,
   input[type],
   .btn,
   button:hover,
