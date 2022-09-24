@@ -543,7 +543,6 @@ td.main-link .topic-title,
 // margin zero --------------------------------------
 
 .topic-list-item,
-#list-area,
 .topic-meta-data,
 .extra-info-wrapper .topic-header-extra,
 .show-more.has-topics .alert,
@@ -658,6 +657,7 @@ ul.subcat-list,
   margin-top: 0;
 }
 
+#list-area,
 .post-links-container ul li {
   margin-bottom: 0.5em;
 }
