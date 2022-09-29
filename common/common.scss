@@ -933,7 +933,7 @@ section.post-menu-area {
 
 // body background ----------------------------------------------------------------------------
 
-body {
+body, body.published-page {
   position: relative;
   background-attachment: scroll;
   background-color: rgba(black, 0.1);
@@ -1242,7 +1242,7 @@ a {
 .badge-wrapper.bar span.badge-category-parent-bg,
 .badge-wrapper.bar span.badge-category-parent-bg + span.badge-category-bg { width: 3px; }
 
-header.d-header.clearfix {
+header.d-header.clearfix, .published-page-header {
   border-bottom: 1px solid #555555;
 }
 
