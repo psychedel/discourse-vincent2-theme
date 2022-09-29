@@ -933,7 +933,7 @@ section.post-menu-area {
 
 // body background ----------------------------------------------------------------------------
 
-body {
+body, body.published-page {
   position: relative;
   background-attachment: scroll;
   background-color: rgba(black, 0.1);
