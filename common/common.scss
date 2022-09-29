@@ -887,15 +887,6 @@ section.post-menu-area {
   width: 100%;
 }
 
-// max-width 95vw -------------------------------------
-
-.main-content,
-.alert,
-#share-link.visible,
-.wrap {
-  max-width: 1110px;
-}
-
 // custom ---------------------------------------------
 
 #topic-title .title-wrapper,
@@ -906,10 +897,6 @@ section.post-menu-area {
 
 .embedded-posts.top {
   width: 690px;
-}
-
-.wrap {
-  width: 1110px;
 }
 
 #reply-control .d-editor-preview img:not(.thumbnail):not(.emoji),
