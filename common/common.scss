@@ -918,6 +918,10 @@ section.post-menu-area {
   height: auto;
 }
 
+ol.category-breadcrumb {
+  min-height: 36px;
+}
+
 // Animation  ---------------------------------------------------------------------------------
 
 .topic-list > .topic-list-body > tr.highlighted,
