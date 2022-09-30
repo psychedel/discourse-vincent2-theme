@@ -2165,6 +2165,22 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
   -webkit-text-stroke: 0;
 }
 
+// Plugin and Theme Component support -----------------------------------------------------------------------------
+
+// Discourse Solved (plugin) https://github.com/discourse/discourse-solved
+li.solved-status-filter details.solved-status-filter summary {
+    background: none;
+    border: none;
+}
+
+// Unanswered Filter (theme component) https://github.com/discourse/discourse-unanswered-filter
+.unanswered-filter-connector div .topic-unanswered-filter-dropdown summary {
+    background: none;
+    border: none;
+}
+
+// Additional configuration settings -----------------------------------------------------------------------------
+
 @if $rounded_interface_borders == "true" {
   #post_1 .contents,
   .nav-pills > li.active > a,
