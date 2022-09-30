@@ -2169,14 +2169,14 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
 
 // Discourse Solved (plugin) https://github.com/discourse/discourse-solved
 li.solved-status-filter details.solved-status-filter summary {
-    background: none;
-    border: none;
+    background: none !important;
+    border: none !important;
 }
 
 // Unanswered Filter (theme component) https://github.com/discourse/discourse-unanswered-filter
 .unanswered-filter-connector div .topic-unanswered-filter-dropdown summary {
-    background: none;
-    border: none;
+    background: none !important;
+    border: none !important;
 }
 
 // Additional configuration settings -----------------------------------------------------------------------------
