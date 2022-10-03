@@ -338,6 +338,10 @@ section.embedded-posts {
 
 // background custom background -----------------
 
+.admin-badges .badges .badges-header {
+  background-color: var(--primary-low);
+}
+
 .topic-post.deleted .topic-meta-data {
   background: rgba($danger, 0.8);
 }
