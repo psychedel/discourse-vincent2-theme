@@ -338,6 +338,10 @@ section.embedded-posts {
 
 // background custom background -----------------
 
+.admin-badges .badges .badges-header {
+  background-color: var(--primary-low);
+}
+
 .topic-post.deleted .topic-meta-data {
   background: rgba($danger, 0.8);
 }
@@ -429,8 +433,7 @@ img.avatar,
 #user-card.show-badges .badge-section .user-badge,
 #user-card.show-badges .badge-section .more-user-badges,
 .badge-card .badge-contents,
-nav.post-controls .post-admin-menu,
-.badges .content-list ul li {
+nav.post-controls .post-admin-menu {
   border: 1px solid;
 }
 
@@ -563,7 +566,6 @@ ol.category-breadcrumb {
 
 // margin large all sides ---------------------------
 
-.badges .content-list ul li,
 .user-main .about .details img.avatar,
 .user-main .about .details .primary h1,
 .user-stream-item.item {
@@ -849,6 +851,10 @@ section.embedded-posts.top {
 
 a.expand-hidden {
   padding: 1.25em;
+}
+
+.admin-badges .badges-header {
+  padding: 10px;
 }
 
 // Display and positioning --------------------------------------------------------------------
