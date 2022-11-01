@@ -125,15 +125,10 @@ h6 {
   p,
   ul,
   ol {
-    -webkit-text-stroke: 0.2px hsla(0, 0%, 50%, 1);
     color: desaturate(
       darken(reverse-lightness(rgba($main-background, 1)), 32%),
       100%
     );
-
-    a {
-      -webkit-text-stroke: 0;
-    }
   }
 
   h1,
@@ -172,7 +167,6 @@ var,
 address,
 dfn {
   font-size: 90%;
-  -webkit-text-stroke: none;
 }
 
 #login-buttons button {
@@ -2165,10 +2159,6 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
 
 .title-wrapper .topic-category {
   padding-left: 0;
-}
-
-.spoiled {
-  -webkit-text-stroke: 0;
 }
 
 // Plugin and Theme Component support -----------------------------------------------------------------------------
