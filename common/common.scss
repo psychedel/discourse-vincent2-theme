@@ -1316,6 +1316,20 @@ blockquote {
 
 // TESTS --------------------------------------------------------------------------------------
 
+/* Sticky avatars */
+.topic-avatar {
+        border: 2px solid darkcyan !important;
+        background: darkgreen !important;
+        right: 65px !important;
+}
+.topic-post.sticky-avatar {
+    .topic-avatar {
+        border: 2px solid darkcyan !important;
+        background: darkgreen !important;
+        right: 65px !important;
+    }
+}
+
 .container.show-badge {
   background: $main-background;
   padding: 2em;
