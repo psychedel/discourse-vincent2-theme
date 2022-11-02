@@ -1319,7 +1319,7 @@ blockquote {
 /* Sticky avatars @START */
 div.topic-post .topic-avatar .post-avatar {
     right: 0;
-    transition: right 0.5s;
+    transition: right 0.3s;
 }
 
 div.post-stream > div.topic-post.sticky-avatar .topic-avatar .post-avatar {
@@ -1331,7 +1331,7 @@ div.post-stream > div.topic-post.sticky-avatar ~ div.topic-post.sticky-avatar .t
 }
 
 .topic-body .topic-meta-data {
-    transition: padding 0.5s;
+    transition: padding 0.3s;
 }
 
 div.post-stream > div.topic-post.sticky-avatar .topic-body .topic-meta-data {
