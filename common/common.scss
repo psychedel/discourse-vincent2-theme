@@ -1316,34 +1316,32 @@ blockquote {
 
 // TESTS --------------------------------------------------------------------------------------
 
-/* Sticky avatars */
-div.topic-post.sticky-avatar .topic-avatar .post-avatar {
-    right: 65px;
+/* Sticky avatars @START */
+div.topic-post .topic-avatar .post-avatar {
+    right: 0;
+    transition: right 0.5s;
 }
-/*
-.topic-post.sticky-avatar {
-  .topic-avatar {
-    position: sticky;
-    top: calc(var(--header-offset) - 0.25em);
-    margin-bottom: 25px;
-    right: 65px;
-  }
+
+div.post-stream > div.topic-post.sticky-avatar .topic-avatar .post-avatar {
+    right: 62px;
 }
-*/
-/*
-.topic-avatar {
-        border: 2px solid darkcyan !important;
-        background: darkgreen !important;
-        right: 65px !important;
+
+div.post-stream > div.topic-post.sticky-avatar ~ div.topic-post.sticky-avatar .topic-avatar .post-avatar {
+    right: 0;
 }
-.topic-post.sticky-avatar {
-    .topic-avatar {
-        border: 2px solid darkcyan !important;
-        background: darkgreen !important;
-        right: 65px !important;
-    }
+
+.topic-body .topic-meta-data {
+    transition: padding 0.5s;
 }
-*/
+
+div.post-stream > div.topic-post.sticky-avatar .topic-body .topic-meta-data {
+    padding-left: 0.5em;
+}
+
+div.post-stream > div.topic-post.sticky-avatar ~ div.topic-post.sticky-avatar .topic-body .topic-meta-data {
+    padding-left: 66px;
+}
+/* Sticky avatars @END */
 
 .container.show-badge {
   background: $main-background;
