@@ -1316,6 +1316,33 @@ blockquote {
 
 // TESTS --------------------------------------------------------------------------------------
 
+/* Sticky avatars @START */
+div.topic-post .topic-avatar .post-avatar {
+    right: 0;
+    transition: right 0.3s;
+}
+
+div.post-stream > div.topic-post.sticky-avatar .topic-avatar .post-avatar {
+    right: 62px;
+}
+
+div.post-stream > div.topic-post.sticky-avatar ~ div.topic-post.sticky-avatar .topic-avatar .post-avatar {
+    right: 0;
+}
+
+.topic-body .topic-meta-data {
+    transition: padding 0.3s;
+}
+
+div.post-stream > div.topic-post.sticky-avatar .topic-body .topic-meta-data {
+    padding-left: 0.5em;
+}
+
+div.post-stream > div.topic-post.sticky-avatar ~ div.topic-post.sticky-avatar .topic-body .topic-meta-data {
+    padding-left: 66px;
+}
+/* Sticky avatars @END */
+
 .container.show-badge {
   background: $main-background;
   padding: 2em;
