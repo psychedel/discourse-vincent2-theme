@@ -1317,6 +1317,14 @@ blockquote {
 // TESTS --------------------------------------------------------------------------------------
 
 /* Sticky avatars */
+.topic-post.sticky-avatar {
+  .topic-avatar {
+    position: sticky;
+    top: calc(var(--header-offset) - 0.25em);
+    margin-bottom: 25px;
+    right: 65px;
+  }
+}
 /*
 .topic-avatar {
         border: 2px solid darkcyan !important;
