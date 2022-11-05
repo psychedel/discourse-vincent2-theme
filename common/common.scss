@@ -1650,8 +1650,9 @@ div.ac-wrap input[type="text"] {
   }
 }
 
-.discourse-no-touch .groups-boxes .group-box {
+.groups-boxes .group-box {
   background: $main-background;
+  border: none;
 }
 
 // 404 page  -------------------------------------------------------------------
