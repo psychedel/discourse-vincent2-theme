@@ -1643,12 +1643,12 @@ div.ac-wrap input[type="text"] {
 .groups-boxes .group-box {
   background: $main-background;
   border: none;
-  outline-color: var(--primary-very-low);
+  outline-color: var(--primary-very-low) $i;
 }
 
 .groups-boxes .group-box:hover {
   background-color: var(--primary-very-low);
-  outline: 2px solid var(--primary-very-low);
+  outline: 2px solid;
 }
   
 // 404 page  -------------------------------------------------------------------
