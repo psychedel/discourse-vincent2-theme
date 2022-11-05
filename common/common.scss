@@ -52,7 +52,6 @@ $i: !important;
 
 // Basics -------------------------------
 
-$v-font-weight: 400 !default;
 $v-font-size: 1.1em !default;
 $v-theme-background: null;
 @if ($theme_background == "") {
@@ -102,16 +101,6 @@ html {
   font-size: 15px;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: $v-font-weight;
-}
-
 .cooked {
   font-size: $v-font-size;
   line-height: 1.65;
@@ -142,10 +131,6 @@ h6 {
       100%
     );
   }
-}
-
-.user-navigation .nav-stacked a.active {
-  font-weight: normal;
 }
 
 #banner #banner-content span {
@@ -1617,7 +1602,6 @@ div.ac-wrap input[type="text"] {
 
   .group-activity-nav li a.active {
     background-color: #4b4b4b;
-    font-weight: inherit;
   }
 
   .group-post {
