@@ -865,6 +865,10 @@ section.post-menu-area {
   right: -2px;
 }
 
+.published-page-author { // hide page author
+  display: none;
+}
+
 // Sticky avatars -----------------------------------------
 
 div.topic-post .topic-avatar .post-avatar {
@@ -1634,7 +1638,27 @@ div.ac-wrap input[type="text"] {
   background-color: var(--primary-very-low);
   outline: 1px solid;
 }
-  
+
+// data-* attributes -----------------------------------------------------------
+
+.published-page-content-wrapper { // columns for published pages
+  max-width: 80em;
+  [data-theme-column="left"] {
+    float: left;
+    width: 15%;
+    margin: 1em 0em 0em 0em;
+    padding: 0 0.5em 0 0;
+  }
+  [data-theme-column="right"] {
+    width: 75%;
+    margin: 0em 0em 0em 12.132em;
+    ul {
+      padding-right: 3em;
+      padding-left: 1em;
+    }
+  }
+}
+
 // 404 page  -------------------------------------------------------------------
 
 .page-not-found-topics {
