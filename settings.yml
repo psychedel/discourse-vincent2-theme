@@ -15,7 +15,7 @@ rounded_category_styles:
   description:
     en: Enable rounded category styles?
 avatar_shape:
-  default: square
+  default: circle
   type: enum
   choices:
     - square
