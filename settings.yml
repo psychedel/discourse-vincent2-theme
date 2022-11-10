@@ -24,6 +24,7 @@ avatar_shape:
   description:
     en: What shape should user avatars be in?
 avatar_flair_drop-shadow:
+  type: null
 box_style_text-shadow:
   default: false
   description:
