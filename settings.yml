@@ -23,9 +23,6 @@ avatar_shape:
     - circle
   description:
     en: What shape should user avatars be in?
-avatar_flair_drop-shadow:
-  default: 0
-  type: enum
 box_style_text-shadow:
   default: false
   description:
