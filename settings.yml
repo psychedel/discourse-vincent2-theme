@@ -14,6 +14,16 @@ rounded_category_styles:
   default: false
   description:
     en: Enable rounded category styles?
+avatar_shape:
+  default: square
+  type: enum
+  choices:
+    - square
+    - rounded
+    - circle
+  description:
+    en: What shape should user avatars be in?
+avatar_flair_drop-shadow:
 box_style_text-shadow:
   default: false
   description:
