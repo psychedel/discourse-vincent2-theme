@@ -2329,6 +2329,29 @@ li.solved-status-filter details.solved-status-filter summary {
   .badge-wrapper.bullet span.badge-category-parent-bg + span.badge-category-bg { border-radius: 0 50% 50% 0; }
 }
 
+@if $avatar_shape == "square" {
+    img.avatar { /* square user avatars */
+        border-radius: 0;
+    }
+  }
+@if $avatar_shape == "rounded" {
+    img.avatar { /* rounded square user avatars */
+        border-radius: 15%;
+    }
+  }
+@if $avatar_shape == "circle" {
+    img.avatar { /* circular user avatars */
+        border-radius: 50%;
+    }
+  }
+
+@if $box_style_text-shadow == "true" {
+  /* Adds text-shadow to category names in their category badge style */
+  .badge-wrapper.box span.badge-category .category-name {
+    text-shadow: 0 0 3px black;
+    padding: 0px 0.5px;
+  }
+
 @if $box_style_text-shadow == "true" {
   /* Adds text-shadow to category names in their category badge style */
   .badge-wrapper.box span.badge-category .category-name {
