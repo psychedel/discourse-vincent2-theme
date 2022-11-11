@@ -2,10 +2,16 @@ theme_background:
   default: ""
   description:
     en: If you wish to change the default background add the url of the new background above.
-dark_background_overlay:
-  default: false
+theme_background_overlay:
+  default: "theme automatic"
+  type: enum
+  choices:
+    - theme automatic
+    - dark overlay
+    - nebula gradient
+    - dragonfly gradient
   description:
-    en: "Enable this if you've set a custom background above."
+    en: What colorway should the theme background overlay be?
 rounded_interface_borders:
   default: false
   description:

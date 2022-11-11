@@ -953,11 +953,6 @@ body:before {
   width: 100vw;
   z-index: -2;
   opacity: $body-background-gradient-opacity;
-  background: linear-gradient(
-    to top left,
-    $body-gradient-color-first,
-    $body-gradient-color-second
-  );
 }
 
 #background {
@@ -2134,50 +2129,6 @@ $q-background: rgba(contrast($text-base), 0.5) !default;
   }
 }
 
-@if $dark_background_overlay == "true" {
-  body:before {
-    background: black;
-    opacity: 0.7;
-    z-index: 0;
-  }
-
-  #background {
-    opacity: 0.85;
-  }
-
-  // fix IE EDGE backgrounds
-
-  @supports (-ms-ime-align: auto) {
-    body:before {
-      z-index: 2;
-    }
-
-    #background {
-      z-index: 1;
-    }
-  }
-
-  @supports (-ms-accelerator: true) {
-    body:before {
-      z-index: 2;
-    }
-
-    #background {
-      z-index: 1;
-    }
-  }
-
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    body:before {
-      z-index: 2;
-    }
-
-    #background {
-      z-index: 1;
-    }
-  }
-}
-
 #topic-title .title-wrapper {
   background: rgba(0, 0, 0, 0.5);
   padding: 1em;
@@ -2207,6 +2158,23 @@ li.solved-status-filter details.solved-status-filter summary {
 }
 
 // Additional configuration settings -----------------------------------------------------------------------------
+
+body:before {
+  @if $theme_background_overlay == "theme automatic" { // determines bg color based on theme color palette's $tertiary value
+    background: linear-gradient(to bottom right, $body-gradient-color-second, $body-gradient-color-first);
+  } @else if $theme_background_overlay == "dark overlay" { // flat black color
+    background: black;
+    opacity: 0.7;
+    z-index: 0;
+  } @else if $theme_background_overlay == "dragonfly gradient" { // three-color gradient (cyan, lime, gold)
+    background: linear-gradient(to bottom right, #42bf9e, #2cbd1b 25%, #bda41b);
+  } @else if $theme_background_overlay == "nebula gradient" { // two-color gradient (blue, violet)
+    background: linear-gradient(to bottom right, #1d7dae, #462177);
+  } @else {
+    @error "$theme_background_color configuration is not set to valid enumerator!";
+  }
+}
+@if $theme_background_overlay == "dark overlay" { #background { opacity: 0.85; } }
 
 @if $rounded_interface_borders == "true" {
   #post_1 .contents,
