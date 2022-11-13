@@ -95,9 +95,13 @@ $button-text-case: #{$button_text_case} !default;
 
 // fonts --------------------------------------------------------------------------------------
 
+:root {
+  --font-family: Arial, sans-serif;
+  --heading-font-family: Open Sans, sans-serif;
+}
+
 html {
-  font-family: "Arial", sans-serif;
-  background: #0A051E;
+  background: #0A051E; // dark purple
   font-size: 15px;
 }
 
