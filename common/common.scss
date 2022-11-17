@@ -890,6 +890,9 @@ div.post-stream > div.topic-post.sticky-avatar ~ div.topic-post.sticky-avatar .t
 div.post-stream > div.topic-post.sticky-avatar .topic-body .topic-meta-data { padding-left: 0.5em; }
 div.post-stream > div.topic-post.sticky-avatar ~ div.topic-post.sticky-avatar .topic-body .topic-meta-data { padding-left: 66px; }
 
+.topic-post.sticky-avatar .topic-avatar { pointer-events: none; }
+div.topic-post .topic-avatar .post-avatar { pointer-events: initial; }
+
 // height and width ---------------------------------------------------------------------------
 
 // width 100% -----------------------------------------
